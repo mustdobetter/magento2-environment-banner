@@ -29,6 +29,10 @@ class Environment extends \Magento\Config\Block\System\Config\Form\Field\FieldAr
             'label' => 'Backend Banner Hex',
             'style' => 'width:100px',
         ));
+        $this->addColumn('ip_whitelist', array(
+            'label' => 'Frontend Banner IP Whitelist',
+            'style' => 'width:100px',
+        ));
         $this->_addAfter = false;
         $this->_addButtonLabel = 'Add New Environment';
     }
